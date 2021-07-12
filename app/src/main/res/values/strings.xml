@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PlanerFire</string>
+    <string name="textView_main_layout">Планер</string>
+    <string name="textView_edit_layout">Заметка:</string>
+    <string name="editText_hint">Введите описание</string>
+    <string name="editText_hint_title">Введите название</string>
+    <string name="text_main">Пусто</string>
+    <string name="text_title_login_activity">Добро пожаловать</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="hint_login">Введите логин</string>
+    <string name="hint_password">Введите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_out">Выйти</string>
+    <string name="sign_up">Регистрация</string>
+</resources>

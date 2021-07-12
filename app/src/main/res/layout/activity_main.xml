@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E1AC"
+    android:onClick="onClickAdd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_main_layout"
+        android:textAlignment="center"
+        android:textColor="#1E2A70"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/rcView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClickAdd"
+        app:backgroundTint="#8591D6"
+        app:layout_constraintBottom_toBottomOf="@+id/rcView"
+        app:layout_constraintEnd_toEndOf="@+id/rcView"
+        app:srcCompat="@drawable/ic_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="#673AB7"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClickBack"
+        app:backgroundTint="#8591D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edTextPoint"
+        app:srcCompat="@drawable/ic_exit" />
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_main"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/rcView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rcView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
